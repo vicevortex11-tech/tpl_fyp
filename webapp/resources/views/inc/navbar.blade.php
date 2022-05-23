@@ -16,6 +16,7 @@
           <li><a href="/clubs">Clubs</a></li>
           <li><a href="/fixtures">Fixtures</a></li>
           <li><a href="/players">Players</a></li>
+          <li><a href="/posts">Blog</a></li>
           <li><a href="/about">About</a></li>
         </ul>
       </div><!--/.nav-collapse -->
