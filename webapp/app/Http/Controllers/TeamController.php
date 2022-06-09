@@ -3,50 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Team;
 
-class PagesController extends Controller
+class TeamController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-    public function home()
-    {
-        return view('pages.table');
-    }
-
-    public function table()
-    {
-        return view('pages.table');
-    }
-
-    public function clubs()
-    {
-        return view('pages.home');
-    }
-
-    public function fixtures()
-    {
-        return view('pages.fixtures');
-    }
-
-    public function players()
-    {
-        return view('pages.players');
-    }
-
-    public function about()
-    {
-        return view('pages.about');
-    }
-
     public function index()
     {
-        //
+        $teams = Team::all();
+        return view('teams.index')->with('teams',$team);
     }
-
     /**
      * Show the form for creating a new resource.
      *

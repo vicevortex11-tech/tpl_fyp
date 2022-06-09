@@ -39,4 +39,14 @@ Route::get('/about', function () {
     return view('pages.about');
 });
 
+Route::get('/admin', function () {
+    return view('admin.index');
+});
+
+Route::get('/login', function () {
+    return view('admin.login');
+});
+
 Route::resource('posts','PostsController');
+
+Route::resource('teams','TeamsController');

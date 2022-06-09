@@ -20,6 +20,9 @@
         <li><a href="/posts">Blog</a></li>
         <li><a href="/about">About</a></li>
       </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/login">Login</a></li>
+      </ul>
     </div>
   </div>
 </nav>

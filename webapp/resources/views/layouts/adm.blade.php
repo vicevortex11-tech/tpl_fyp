@@ -8,13 +8,13 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
     <body>
-        @include('inc.navbar')
+        @include('inc.admbar')
         <div class="container">
         @yield('content')
         </div>
         @include('inc.footer')
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="webapp\resources\assets\js\app.js"></script>
     </body>
 </html>
