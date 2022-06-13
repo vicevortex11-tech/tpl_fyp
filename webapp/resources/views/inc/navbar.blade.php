@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">{{config('app.name','TPLIS')}}</a>
+      <a class="navbar-brand" href="#"><img alt="{{config('app.name','TPLIS')}}" src="C:\Users\Musa\Documents\College Notes\CS499 - FYP 2\Image files\logo.png"></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
