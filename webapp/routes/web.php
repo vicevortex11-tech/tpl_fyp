@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/home', function () {
@@ -21,10 +21,6 @@ Route::get('/home', function () {
 
 Route::get('/table', function () {
     return view('pages.table');
-});
-
-Route::get('/clubs', function () {
-    return view('pages.clubs');
 });
 
 Route::get('/fixtures', function () {

@@ -6,8 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{config('app.name','TPLIS')}}</title>
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <script type="text/javascript"> 
+            function display_c(){
+                var refresh=1000; // Refresh rate in milli seconds
+                mytime=setTimeout('display_ct()',refresh)
+            }
+            function display_ct() {
+                var x = new Date()
+                document.getElementById('ct').innerHTML = x;
+                display_c();
+                document.getElementById('t1').value = x;
+            }
+        </script>
     </head>
-    <body>
+    <body onload=display_ct();> <span id='ct' >
+    </span>>
         @include('inc.navbar')
         <div class="container">
         @yield('content')

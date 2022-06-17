@@ -11,7 +11,7 @@
       <a class="navbar-brand" href="#">{{config('app.name','TPLIS')}}</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-inverse">
         <li><a href="/home">Dashboard</a></li>
         <li><a href="#">User Management</a></li>
         <li><a href="#">Teams & Stadiums</a></li>

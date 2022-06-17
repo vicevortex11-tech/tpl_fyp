@@ -15,6 +15,7 @@ class CreateGoalsPerGamesTable extends Migration
     {
         Schema::create('goals_per_games', function (Blueprint $table) {
             $table->double('avg_goals');
+            $table->timestamps();
         });
     }
 

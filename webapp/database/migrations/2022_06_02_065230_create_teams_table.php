@@ -14,10 +14,11 @@ class CreateTeamsTable extends Migration
     public function up()
     {
         Schema::create('teams', function (Blueprint $table) {
-            $table->increments('id');
+            $table->integer('id');
             $table->string('name');
             $table->integer('coach_id');
             $table->string('abb');
+            $table->timestamps();
         });
     }
 

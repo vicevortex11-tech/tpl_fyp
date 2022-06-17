@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
-<div class="container">
+    <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h1>Teams</h1>
@@ -12,19 +11,21 @@
                         <th>Team</th>
                         <th>Stadium</th>
                         <th>Players</th>
-                    </tr>                    
+                    </tr>
+                  <!--  @forelse($teams as $team)
                         <tr>
-                            <td>Azam FC</td>
-                            <td>Azam Complex</td>
-                            <td>23</td>
+                            <td>{{ $team->name }}</td>
+                            <td>N/A</td>
+                            <td><a href="/players/{{ $team->id }}">{{ $team->players->count() }}</a></td>
                         </tr>
+                    @empty
                         <tr>
-                            <td colspan="3">No teams.</td>
+                            <td colspan="2">No teams.</td>
                         </tr>
+                    @endforelse-->
                 </table>
 
             </div>
         </div>
     </div>
-        
 @endsection

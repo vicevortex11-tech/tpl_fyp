@@ -20,6 +20,7 @@ class CreatePlayersTable extends Migration
             $table->integer('position_id');
             $table->string('nationality');
             $table->integer('jersey_number');
+            $table->timestamps();
         });
     }
 

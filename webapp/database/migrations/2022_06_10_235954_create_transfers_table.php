@@ -20,6 +20,7 @@ class CreateTransfersTable extends Migration
             $table->integer('team_id');
             $table->date('start_date');
             $table->date('end_date');
+            $table->timestamps();
         });
     }
 

@@ -20,6 +20,7 @@ class CreateGamesTable extends Migration
             $table->integer('gameweek');
             $table->integer('team1_id');
             $table->integer('team2_id');
+            $table->timestamps();
         });
     }
 

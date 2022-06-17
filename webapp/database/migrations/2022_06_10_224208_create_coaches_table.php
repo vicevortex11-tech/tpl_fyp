@@ -17,6 +17,7 @@ class CreateCoachesTable extends Migration
             $table->integer('id');
             $table->string('fname', 20);
             $table->string('lname', 20);
+            $table->timestamps();
         });
     }
 

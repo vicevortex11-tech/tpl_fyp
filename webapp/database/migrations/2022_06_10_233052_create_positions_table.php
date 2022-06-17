@@ -14,8 +14,9 @@ class CreatePositionsTable extends Migration
     public function up()
     {
         Schema::create('positions', function (Blueprint $table) {
-            $table->increments('id');
+            $table->integer('id');
             $table->enum('type',['keeper','defender','midfielder','attacker']);
+            $table->timestamps();
         });
     }
 

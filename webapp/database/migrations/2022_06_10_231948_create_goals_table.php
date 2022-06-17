@@ -17,6 +17,7 @@ class CreateGoalsTable extends Migration
             $table->integer('game_id');
             $table->integer('gtime');
             $table->integer('player_id');
+            $table->timestamps();
         });
     }
 

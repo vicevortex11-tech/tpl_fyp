@@ -18,6 +18,7 @@ class CreateStadiaTable extends Migration
             $table->string('name',20);
             
             $table->string('location',100);
+            $table->timestamps();
         });
     }
 
